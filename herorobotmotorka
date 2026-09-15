@@ -1,0 +1,51 @@
+class Hero:
+    def __init__(self, jmeno:str, lvl:int, lokace:str = "Les"):
+        self.jmeno = jmeno
+        self.lvl = lvl
+        self.lokace = lokace
+        pass
+
+    def pokrik(self):
+        return"hůůůů"
+
+    def predstavSe(self):
+        return f"Ahoj mé jméno je {hero.jmeno}"
+
+    def kdeJsi(self):
+        return f"Momentálně se nacházím v {self.lokace}"
+
+    def presunSe(self, nLokace:str):
+        self.lokace = nLokace
+        return f"Přesunul jsem se na {nLokace}"
+
+hero = Hero("Eugene",32)
+print(hero.pokrik())
+print(hero.predstavSe())
+print(hero.kdeJsi())
+print(hero.presunSe("Hora"))
+
+class Robot:
+    def __init__(self, oznaceni:str, baterie:int, ukol:str = "počítat"):
+        self.oznaceni = oznaceni
+        self.baterie = baterie
+        self.ukol = ukol
+        pass
+
+    def zvuk(self):
+        return"piip"
+
+    def diagnostika(self):
+        return f"Mé označení je {self.oznaceni} a moje baterka má {self.baterie}%"
+
+    def aktivniUkol(self):
+        return f"Můj aktivní úkol je momentálně {self.ukol}"
+
+    def zadejUkol(self, nUkol:str):
+        self.ukol = nUkol
+        return f"Mojim novým úkolem je teď {nUkol}"
+
+robot = Robot("T3H4", 74)
+print(robot.zvuk())
+print(robot.diagnostika())
+print(robot.aktivniUkol())
+print(robot.zadejUkol("spát"))
