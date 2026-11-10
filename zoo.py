@@ -80,5 +80,3 @@ class Zoo:
             print(f"Zvířata v {self.nazev}: ")
             for animal in self.animals:
                 print("-->", animal)
-
-print(Zoo.addAnimal(animal1))
